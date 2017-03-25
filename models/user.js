@@ -7,12 +7,14 @@ var userSchema = new Schema({
     required:true,
     unique:true
   },
-  skills:[
-    {
-      name: String,
-      score: Number
-    }
-  ]
+  skills:[{
+    name:{
+      type:String,
+      required:true,
+      unique:true
+    },
+    score: Number
+  }]
 },{
   timestamps: true
 });
